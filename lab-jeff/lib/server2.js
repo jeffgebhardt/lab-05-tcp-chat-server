@@ -5,15 +5,12 @@ const EE  = require('events').EventEmitter;
 
 
 let serverPort = 3000;
-let clientsCounter = 0;
 let pool = {};
 pool.users = {};
 
 pool.ee = new EE();
 pool.ee.on('register', function(socket){
-  clientsCounter = clientsCounter + 1;
   var newClient = new Client(socket);
-  console.log(newClient);
   pool.users[newClient.id] = newClient;
 
   console.log(newClient.nickname + ' connected to the server.');
