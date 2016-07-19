@@ -1,4 +1,4 @@
-![Triforce](http://gph.is/296pOUO)
+![Triforce](./triforce2.gif)
 
 #TCP Chat Server#
 
