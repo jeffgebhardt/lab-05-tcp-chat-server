@@ -9,7 +9,7 @@ A TCP chat server/client program running in Node.js
 From the root directory of 'lab-jeff' run the following command in your terminal:
 `npm install`
 Then to start the server:
-`node ./lib/server2.js`
+`node ./lib/server.js`
 Finally to connect new clients, open a new tab for each client and run:
 `telnet localhost 300`
 You can then chat by typing your message and pressing enter.
